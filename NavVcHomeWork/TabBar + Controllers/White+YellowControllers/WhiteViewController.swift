@@ -18,7 +18,7 @@ final class WhiteViewController: UIViewController {
     }
     @objc private func goToLastScreen() {
         let lastVC = YellowViewController()
-        navigationController?.pushViewController(lastVC, animated: true)
+        navigationController?.setViewControllers([lastVC], animated: true)
     }
     private func setupUI() {
         view.addSubview(goToNext)

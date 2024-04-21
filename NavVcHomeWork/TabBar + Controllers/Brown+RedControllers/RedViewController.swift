@@ -29,7 +29,7 @@ final class RedViewController: UIViewController {
 
     @objc private func skipToMain() {
         let mainVC = WellcomeViewController()
-        navigationController?.pushViewController(mainVC, animated: true)
+        navigationController?.setViewControllers([mainVC], animated: true)
     }
 
     

@@ -18,7 +18,7 @@ final class BlackViewController: UIViewController {
     }
     @objc private func goToLastScreen() {
         let lastVC = GreenViewController()
-        navigationController?.pushViewController(lastVC, animated: true)
+        navigationController?.setViewControllers([lastVC], animated: true)
     }
     private func setupUI() {
         view.addSubview(goToNext)

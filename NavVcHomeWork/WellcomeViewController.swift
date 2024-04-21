@@ -54,15 +54,15 @@ final class WellcomeViewController: UIViewController {
     
     @objc private func goToSignIn(){
         let signInVC = SignInViewController()
-        navigationController?.pushViewController(signInVC, animated: true)
+        navigationController?.setViewControllers([signInVC], animated: true)
     }
     @objc private func goToSignUp(){
         let signUpVC = SignUpViewController()
-        navigationController?.pushViewController(signUpVC, animated: true)
+        navigationController?.setViewControllers([signUpVC], animated: true)
     }
     @objc private func goToTabBarItem(){
         let tabBar = MainTabBarController()
-        navigationController?.pushViewController(tabBar, animated: true)
+        navigationController?.setViewControllers([tabBar], animated: true)
     }
 
 

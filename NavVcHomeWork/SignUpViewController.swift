@@ -58,7 +58,7 @@ final class SignUpViewController: UIViewController {
     
     @objc private func goToTabBar() {
         let tabBar = MainTabBarController()
-        navigationController?.pushViewController(tabBar, animated: true)
+        navigationController?.setViewControllers([tabBar], animated: true)
     }
     
 
